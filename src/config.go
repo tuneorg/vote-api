@@ -19,6 +19,7 @@ type Config struct {
 	PORT        int    `yaml:"PORT"`
 	ADDRESS     string `yaml:"ADDRESS"`
 	EMBED       Embed  `yaml:"EMBED"`
+	ENDPOINT    string `yaml:"ENDPOINT"`
 }
 
 func Init(filename string) (Config, error) {

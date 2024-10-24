@@ -14,7 +14,7 @@ func main() {
 		panic(fmt.Sprintf("couldn't initialize config: %v", err))
 	}
 
-	http.HandleFunc("/topgg", vote.VoteHandler(conf))
+	http.HandleFunc(fmt.Sprintf("/%s", conf.ENDPOINT), vote.VoteHandler(conf))
 
 	addr := fmt.Sprintf("%s:%d", conf.ADDRESS, conf.PORT)
 

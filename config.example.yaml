@@ -2,6 +2,7 @@ TOPGG_KEY: password
 WEBHOOK_URL: WEBHOOK_URL
 PORT: 8080
 ADDRESS: "localhost"
+ENDPOINT: "topgg"
 EMBED:
   Title: "New Vote Received"
   Description: "User {{user}} voted for bot {{bot}}. Is it a weekend? {{weekend}}"
